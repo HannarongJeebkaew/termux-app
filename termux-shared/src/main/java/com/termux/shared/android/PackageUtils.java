@@ -758,7 +758,7 @@ public class PackageUtils {
                 if (toastString != null) Logger.showToast(context, toastString, true);
                 ComponentName componentName = new ComponentName(packageName, className);
                 packageManager.setComponentEnabledSetting(componentName,
-                    setState ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED : PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                    PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                     PackageManager.DONT_KILL_APP);
             }
             return null;
